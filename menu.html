@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navigation Bar</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            .navbar {
+                background-color: #3f51b5;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-item {
+                margin-right: 20px;
+            }
+
+            .nav-item:last-child {
+                margin-right: 0;
+            }
+
+            .nav-link {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 4px;
+            }
+
+            .nav-link:hover {
+                color: black;
+                background-color: white;
+            }
+
+            .dropdown-toggle::after {
+                content: "▾";
+                margin-left: 5px;
+            }
+
+            .navbar-centered {
+                justify-content: center;
+            }
+
+            .navbar-space-between {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .left-links {
+                display: flex;
+            }
+
+            .right-links {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-space-between">
+            <ul class="nav-links left-links">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dropdown-toggle">Other Demos</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Cart</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Guest Orders</a>
+                </li>
+            </ul>
+            <ul class="nav-links right-links">
+                <li class="nav-item">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sample Page</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
